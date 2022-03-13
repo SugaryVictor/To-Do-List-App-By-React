@@ -1,0 +1,14 @@
+.create-element {
+    padding: 30px 40px;
+    &__btn {
+        img {
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+.footer {
+    background-color: #fff;
+    bottom: 0;
+}
