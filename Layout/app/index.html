@@ -1,131 +1,139 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../css/style.min.css">
-    <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/jpg">
-    <title>To Do List App</title>
-  </head>
-  <body> 
-    <script src="../js/main.js"></script>
-    <div class="wrapper">
-      <header class="header">
-        <div class="nav">
-          <div class="container">
-            <div class="row">
-              <nav class="nav__calendar-items">
-                <div class="nav__left">
-                  <div class="nav__calendar-icon">
-                    <div class="nav__month">May</div>
-                    <div class="nav__day">23</div>
-                  </div>
-                  <div class="nav__list-name h1">Today</div>
-                </div>
-                <div class="nav__right">
-                  <ul class="nav__btns menu">
-                    <li class="nav__list-btn">
-                      <button>
-                        <svg width="27" height="17" viewBox="0 0 27 17" xmlns="http://www.w3.org/2000/svg">
-                          <rect x="23.0881" y="0.618517" width="4.34871" height="17.8448" rx="1.925" transform="rotate(45 23.0881 0.618517)" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="0.15"></rect>
-                          <rect x="0.926867" y="3.69324" width="4.34871" height="17.8448" rx="1.925" transform="rotate(-45 0.926867 3.69324)" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="0.15"></rect>
-                        </svg>
-                      </button>
-                      <ul class="nav__list">
-                        <li class="nav__lists-text"><a href="#">Today</a></li>
-                        <li class="nav__lists-text"><a href="#">Tomorrow</a></li>
-                        <li class="nav__lists-text"><a href="#">Projects</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav__filter-btn">
-                      <button>
-                        <svg width="43" height="12" viewBox="0 0 43 12" xmlns="http://www.w3.org/2000/svg">
-                          <ellipse cx="6.0915" cy="6.23285" rx="5.77009" ry="5.76666" fill="#C4C4C4"></ellipse>
-                          <ellipse cx="21.4785" cy="6.23285" rx="5.77009" ry="5.76666" fill="#C4C4C4"></ellipse>
-                          <ellipse cx="36.8653" cy="6.23285" rx="5.77009" ry="5.76666" fill="#C4C4C4"></ellipse>
-                        </svg>
-                      </button>
-                      <ul class="nav__list">
-                        <li class="nav__lists-text"><a href="#">Completed</a></li>
-                        <li class="nav__lists-text"><a href="#">In Progress</a></li>
-                        <li class="nav__lists-text"><a href="#">Removed</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </header>
-      <main class="page">
-        <div class="task-list">
-          <div class="container">
-            <div class="row">
-              <section class="task_active">
-                <div class="task__container">
-                  <label class="check">
-                    <input class="check__input" type="checkbox"><span class="check__box"></span>
-                    <div class="check__text text">Build a modern To do app</div>
-                    <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
-                  </label>
-                </div>
-              </section>
-              <section class="task">
-                <div class="task__container">
-                  <label class="check">
-                    <input class="check__input" type="checkbox"><span class="check__box"></span>
-                    <div class="check__text text">Buy groceries (milk, vegetables, fruits, fish)</div>
-                    <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
-                  </label>
-                </div>
-              </section>
-              <section class="task">
-                <div class="task__container">
-                  <label class="check">
-                    <input class="check__input" type="checkbox"><span class="check__box"></span>
-                    <div class="check__text text">Clean the house and backyard</div>
-                    <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
-                  </label>
-                </div>
-              </section>
-              <section class="task">
-                <div class="task__container">
-                  <label class="check">
-                    <input class="check__input" type="checkbox"><span class="check__box"></span>
-                    <div class="check__text text">Workout for 30 minutes at the gym</div>
-                    <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
-                  </label>
-                </div>
-              </section>
-              <section class="task">
-                <div class="task__container">
-                  <label class="check">
-                    <input class="check__input" type="checkbox"><span class="check__box"></span>
-                    <div class="check__text text">Buy groceries (milk, vegetables, fruits, fish)</div>
-                    <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
-                  </label>
-                </div>
-              </section>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="footer">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="shortcut icon" href="../img/icons/favicon.ico" type="image/jpg">
+  <title>To Do List App</title>
+</head>
+
+<body>
+  <script src="../js/main.js"></script>
+  <div class="wrapper">
+    <header class="header">
+      <div class="nav">
         <div class="container">
           <div class="row">
+            <nav class="nav__calendar-items">
+              <div class="nav__left">
+                <div class="nav__calendar-icon">
+                  <div class="nav__month">May</div>
+                  <div class="nav__day">23</div>
+                </div>
+                <div class="nav__list-name h1">Today</div>
+              </div>
+              <div class="nav__right">
+                <ul class="nav__btns menu">
+                  <li class="nav__list-btn">
+                    <button>
+                      <svg width="27" height="17" viewBox="0 0 27 17" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="23.0881" y="0.618517" width="4.34871" height="17.8448" rx="1.925"
+                          transform="rotate(45 23.0881 0.618517)" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="0.15">
+                        </rect>
+                        <rect x="0.926867" y="3.69324" width="4.34871" height="17.8448" rx="1.925"
+                          transform="rotate(-45 0.926867 3.69324)" fill="#C4C4C4" stroke="#C4C4C4" stroke-width="0.15">
+                        </rect>
+                      </svg>
+                    </button>
+                    <ul class="nav__list">
+                      <li class="nav__lists-text"><a href="#">Today</a></li>
+                      <li class="nav__lists-text"><a href="#">Tomorrow</a></li>
+                      <li class="nav__lists-text"><a href="#">Projects</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav__filter-btn">
+                    <button>
+                      <svg width="43" height="12" viewBox="0 0 43 12" xmlns="http://www.w3.org/2000/svg">
+                        <ellipse cx="6.0915" cy="6.23285" rx="5.77009" ry="5.76666" fill="#C4C4C4"></ellipse>
+                        <ellipse cx="21.4785" cy="6.23285" rx="5.77009" ry="5.76666" fill="#C4C4C4"></ellipse>
+                        <ellipse cx="36.8653" cy="6.23285" rx="5.77009" ry="5.76666" fill="#C4C4C4"></ellipse>
+                      </svg>
+                    </button>
+                    <ul class="nav__list">
+                      <li class="nav__lists-text"><a href="#">Completed</a></li>
+                      <li class="nav__lists-text"><a href="#">In Progress</a></li>
+                      <li class="nav__lists-text"><a href="#">Removed</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page">
+      <div class="task-list">
+        <div class="container">
+          <div class="row">
+            <section class="task_active">
+              <div class="task__container">
+                <label class="check">
+                  <input class="check__input" type="checkbox"><span class="check__box"></span>
+                  <div class="check__text text">Build a modern To do app</div>
+                  <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
+                </label>
+              </div>
+            </section>
             <section class="task">
               <div class="task__container">
                 <label class="check">
-                  <input class="check__input" type="checkbox"><span><a href="#"><img src="./img/icons/create.svg" alt="create"></a></span>
-                  <div class="check__text text">Create New Item</div>
+                  <input class="check__input" type="checkbox"><span class="check__box"></span>
+                  <div class="check__text text">Buy groceries (milk, vegetables, fruits, fish)</div>
+                  <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
+                </label>
+              </div>
+            </section>
+            <section class="task">
+              <div class="task__container">
+                <label class="check">
+                  <input class="check__input" type="checkbox"><span class="check__box"></span>
+                  <div class="check__text text">Clean the house and backyard</div>
+                  <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
+                </label>
+              </div>
+            </section>
+            <section class="task">
+              <div class="task__container">
+                <label class="check">
+                  <input class="check__input" type="checkbox"><span class="check__box"></span>
+                  <div class="check__text text">Workout for 30 minutes at the gym</div>
+                  <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
+                </label>
+              </div>
+            </section>
+            <section class="task">
+              <div class="task__container">
+                <label class="check">
+                  <input class="check__input" type="checkbox"><span class="check__box"></span>
+                  <div class="check__text text">Buy groceries (milk, vegetables, fruits, fish)</div>
+                  <button class="check__remove"><img src="./img/icons/remove.svg" alt="remove"></button>
                 </label>
               </div>
             </section>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <section class="task">
+            <div class="task__container">
+              <label class="check">
+                <input class="check__input" type="checkbox"><span><a href="#"><img src="./img/icons/create.svg"
+                      alt="create"></a></span>
+                <div class="check__text text">Create New Item</div>
+              </label>
+            </div>
+          </section>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>

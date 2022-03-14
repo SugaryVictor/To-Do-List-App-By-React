@@ -1,0 +1,76 @@
+//Подключаем нулевой стиль
+@import "nullstyle";
+//Подключаем шщрифты
+//&display=swap &subnet=cyrillc-ext
+@import "fonts";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+//Иконочный шрифт или спрайт
+// @import "icons";
+// Импортируем переменные
+@import "vars";
+//------------------------------------------------------------------------------
+html,
+body {
+  font-size: 14px;
+  height: 100%;
+  color: $colorText;
+  font-family: $fontFamily;
+}
+a {
+  // Я наконец-то понял как пишется эта команда
+  color: inherit;
+  &:hover {
+    color: $colorMain;
+  }
+}
+button {
+  display: block;
+  background: transparent;
+}
+//ОСНОВНАЯ СЕТКА-----------------------------------------------------------------
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.page {
+  flex: 1 1 auto;
+  align-items: center;
+  @media (max-width: $md1+px) {
+  }
+  @media (max-width: $md3+px) {
+  }
+}
+.container {
+  width: 89.13vw;
+  margin: 0 auto;
+}
+//ОСНОВНАЯ СЕТКА-----------------------------------------------------------------
+.h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: (65 / 64) * 100%;
+}
+.h3 {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+
+  color: #3d82eb;
+}
+.text {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.02em;
+}
+//Импортируем постоянные классы--------------------------------------------------
+@import "mixin";
+@import "ui";
+@import "../components/navigation/nav";
+@import "../components/footer/footer";
+//Импортируем классы этого проекта-----------------------------------------------
+@import "../components/taskList/taskList";
+@import "../components/taskItem/taskItem";

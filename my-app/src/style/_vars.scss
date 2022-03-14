@@ -1,0 +1,19 @@
+//Шрифт по умолчанию
+$fontFamily: "Roboto";
+
+//Цвета страницы
+$colorMain: #3d82eb;
+$colorHover: #5791e7;
+$colorActive: #4e4e4e;
+$colorText: #4e4e4e;
+
+$colorFooter: #e5e5e5;
+
+//Прочее переменные
+//$maxWidth: 1111;
+$maxWidthContainer: 1380 + 20;
+//Это брейкпоинты
+$md1: $maxWidthContainer + 10;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
