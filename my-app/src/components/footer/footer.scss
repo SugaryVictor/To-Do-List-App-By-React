@@ -1,0 +1,51 @@
+.create-element {
+    padding: 30px 40px;
+    &__btn {
+        img {
+            display: block;
+            width: 45px;
+            height: 45px;
+        }
+    }
+}
+.footer {
+    background-color: #fff;
+    bottom: 0;
+}
+.task {
+    padding: 30px 40px;
+    &_active {
+        padding: 30px 40px;
+        box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.15);
+        border-radius: 17px;
+        background: #ffffff;
+        .check__remove {
+            display: block;
+        }
+    }
+}
+.check {
+    display: flex;
+    justify-content: flex-start;
+    &__text {
+        margin-left: 60px;
+        flex-grow: 1;
+    }
+    &__input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:checked + .check__box {
+            background-image: url("../../img/icons/complete_task.svg");
+        }
+    }
+    &__box {
+        display: block;
+        min-width: 45px;
+        min-height: 45px;
+        background: url("../../img/icons/process_task.svg") 0 0/100% no-repeat;
+    }
+    &__remove {
+        display: none;
+    }
+}
